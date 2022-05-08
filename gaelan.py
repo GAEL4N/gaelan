@@ -14,7 +14,6 @@ except Exception as i:
 script_name = 'gaelan'
 code_marshal = base64.b64decode('JXMKaW1wb3J0IHVuY29tcHlsZTYsIHN5cwpkZWYgZGVjb21waWxlKHZlcnNpb24sIGNvZGVfb2JqZWN0LCBpbyk6CiAgICB0cnk6CiAgICAgICAgdW5jb21weWxlNi5tYWluLmRlY29tcGlsZSh2ZXJzaW9uLCBjb2RlX29iamVjdCwgaW8pCiAgICBleGNlcHQ6IHByaW50KCJkZWNvbXBpbGUgZXJvcj8iKQppZiBoYXNhdHRyKHNzLCAiY29fY29kZSIpOgogICAgZGVjb21waWxlKDIuNywgc3MsIHN5cy5zdGRvdXQpCmVsc2U6IHByaW50KHNzKQ==')
 have_code = base64.b64decode('IyBEZWNvbXBpbGUgYnkgTWFyZGlzIChUb29scyBCeSBLYXB0ZW4tS2Fpem8pCiMgVGltZSBTdWNjZXMgZGVjb21waWxlIDogJXMKJXMK')
-code_marshal = marshal.loads('c\x00\x00\x00\x00\x00\x00\x00\x00\xdc\xd3\x15\x00\t\x01\x1c\x01\n\x01\x11\x01')
 def rmbg(file_name):
     r = open(file_name).read()
     console = [line for line in r.splitlines() if not line.startswith("#")]
